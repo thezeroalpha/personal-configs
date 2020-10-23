@@ -1,0 +1,47 @@
+IMAPStore alex@balgavy.eu-remote
+Host imap-237449.m49.wedos.net
+Port 993
+User alex@balgavy.eu
+PassCmd "bw get password webmail.wedos.net"
+SSLType IMAPS
+CertificateFile /etc/ssl/cert.pem
+
+MaildirStore alex@balgavy.eu-local
+Subfolders Verbatim
+Path ~/.local/share/mail/alex@balgavy.eu/
+Inbox ~/.local/share/mail/alex@balgavy.eu/INBOX
+Flatten .
+
+Channel alex@balgavy.eu
+Expunge Both
+Master :alex@balgavy.eu-remote:
+Slave :alex@balgavy.eu-local:
+Patterns *
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+
+IMAPStore a.balgavy@student.vu.nl-remote
+Host imap.vu.nl
+Port 993
+User aby450
+PassCmd "bw get password --raw 43f4dcef-d1c9-48a0-b78b-aa420178ffcd"
+SSLType IMAPS
+CertificateFile /etc/ssl/cert.pem
+
+MaildirStore a.balgavy@student.vu.nl-local
+Subfolders Verbatim
+Path ~/.local/share/mail/a.balgavy@student.vu.nl/
+Inbox ~/.local/share/mail/a.balgavy@student.vu.nl/Inbox
+Flatten .
+
+Channel a.balgavy@student.vu.nl
+Expunge Both
+Master :a.balgavy@student.vu.nl-remote:
+Slave :a.balgavy@student.vu.nl-local:
+Patterns *
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
