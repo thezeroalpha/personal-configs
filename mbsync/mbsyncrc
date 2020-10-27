@@ -9,7 +9,7 @@ CertificateFile /etc/ssl/cert.pem
 MaildirStore alex@balgavy.eu-local
 Subfolders Verbatim
 Path ~/.local/share/mail/alex@balgavy.eu/
-Inbox ~/.local/share/mail/alex@balgavy.eu/INBOX
+Inbox ~/.local/share/mail/alex@balgavy.eu/Inbox
 Flatten .
 
 Channel alex@balgavy.eu
