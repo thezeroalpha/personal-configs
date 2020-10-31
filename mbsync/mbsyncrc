@@ -4,7 +4,7 @@ Port 993
 User alex@balgavy.eu
 PassCmd "bw get password webmail.wedos.net"
 SSLType IMAPS
-CertificateFile /etc/ssl/cert.pem
+CertificateFile /usr/local/etc/openssl/cert.pem
 
 MaildirStore alex@balgavy.eu-local
 Subfolders Verbatim
@@ -28,7 +28,7 @@ Port 993
 User aby450
 PassCmd "bw get password --raw 43f4dcef-d1c9-48a0-b78b-aa420178ffcd"
 SSLType IMAPS
-CertificateFile /etc/ssl/cert.pem
+CertificateFile /usr/local/etc/openssl/cert.pem
 
 MaildirStore a.balgavy@student.vu.nl-local
 Subfolders Verbatim
