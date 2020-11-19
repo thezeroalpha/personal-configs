@@ -2,7 +2,7 @@ IMAPStore alex@balgavy.eu-remote
 Host imap-237449.m49.wedos.net
 Port 993
 User alex@balgavy.eu
-PassCmd "bw get password webmail.wedos.net"
+PassCmd "bw get password --raw 5a94c68d-d0c3-49a7-bdbf-ac1f009a8c35"
 SSLType IMAPS
 CertificateFile /usr/local/etc/openssl/cert.pem
 
